@@ -47,7 +47,7 @@ export default {
         p5.rectMode(this.p5.CENTER)
         p5.noSmooth()
         canvas.parent(container)
-        this.imageLoad = p5.loadImage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wix.com%2Fblog%2Flogo-colors&psig=AOvVaw1MhG26OLH90cXU-jXHqRsc&ust=1702634426697000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiGwdbVjoMDFQAAAAAdAAAAABAD', (img) => {
+        this.imageLoad = p5.loadImage('https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.stack.imgur.com%2Fs2hFt.png&tbnid=cY4dsfIDWC_HEM&vet=12ahUKEwjE6e-y1o6DAxXgsVYBHcjjAxUQMygAegQIARBT..i&imgrefurl=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F65808549%2Furl-has-been-blocked-by-cors-policy&docid=tSMeo9hXkzfh4M&w=1871&h=404&q=image%20link%20not%20blocked%20by%20cors%20policy&ved=2ahUKEwjE6e-y1o6DAxXgsVYBHcjjAxUQMygAegQIARBT', (img) => {
           this.mapImage = img
         })
       }
