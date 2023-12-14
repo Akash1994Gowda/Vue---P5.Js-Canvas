@@ -57,16 +57,16 @@ export default {
       p5.draw = () => {
         this.draw(p5)
       }
-      p5.mousePressed = (event) => {
-        ;(this.x_value = event.clientX), (this.y_value = event.clientY)
+      p5.mousePressed = () => {
+        ;(this.x_value = p5.mouseX), (this.y_value = p5.mouseY)
         // if (this.firstTime) {
-        this.mx = event.clientX
-        this.my = event.clientY
+        this.mx = p5.mouseX
+        this.my = p5.mouseY
         this.firstTime = false
         // }
 
         this.mousePressedFlag = true
-        this.mousePressed(event.clientX, event.clientY)
+        this.mousePressed(p5.mouseX, p5.mouseY)
       }
 
       p5.mouseWheel = (event) => {
@@ -98,15 +98,16 @@ export default {
     },
     mousePressed(mouseX, mouseY) {
       if (this.menuSelection === 'drawPencil') {
-        this.mapImage.loadPixels()
-        let size = 1
+        console.log(this.canvas);
+        /* let size = 1
         let y = mouseY
         for (let i = mouseX - size / 2; i < mouseX + size / 2; i++) {
           for (let j = y - size / 2; j < y + size / 2; j++) {
             this.mapImage.set(i, j, this.p5.color(255))
             console.log('i,j', i, j)
           }
-        }
+        } */
+        this.mapImage.set(mouseX, mouseY, this.p5.color(255))
         this.mapImage.updatePixels()
         return
       }
