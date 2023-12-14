@@ -47,7 +47,7 @@ export default {
         p5.rectMode(this.p5.CENTER)
         p5.noSmooth()
         canvas.parent(container)
-        this.imageLoad = p5.loadImage('assets/Map.png', (img) => {
+        this.imageLoad = p5.loadImage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wix.com%2Fblog%2Flogo-colors&psig=AOvVaw1MhG26OLH90cXU-jXHqRsc&ust=1702634426697000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiGwdbVjoMDFQAAAAAdAAAAABAD', (img) => {
           this.mapImage = img
         })
       }
