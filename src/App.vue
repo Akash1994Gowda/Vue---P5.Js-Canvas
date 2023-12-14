@@ -47,7 +47,7 @@ export default {
         p5.rectMode(this.p5.CENTER)
         p5.noSmooth()
         canvas.parent(container)
-        this.imageLoad = p5.loadImage('http://10.221.44.93:8081/Map.png', (img) => {
+        this.imageLoad = p5.loadImage('https:/peppy-sunshine-5eff6d.netlify.app/Map.png', (img) => {
           this.mapImage = img
         })
       }
